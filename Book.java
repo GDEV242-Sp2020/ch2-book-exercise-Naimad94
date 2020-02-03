@@ -6,7 +6,7 @@
  * @author (Insert your name here.)
  * @version (Insert today's date here.)
  */
-class Book
+public class Book
 {
      // The fields.
     private String author;
@@ -21,6 +21,16 @@ class Book
         author = bookAuthor;
         title = bookTitle;
     }
-
-    // Add the methods here ...
+    
+    //Added the Accessor for author
+    public String getauthor()
+    {
+        return author;
+    }
+    
+    //Added the Accessor for title
+    public String gettitle()
+    {
+        return title;
+    }
 }
