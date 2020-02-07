@@ -3,14 +3,15 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ * Damian Nunez
+ * February 7,2020
  */
 public class Book
 {
-     // The fields.
+    // The fields.
     private String author;
     private String title;
+    private int pages;
 
     /**
      * Set the author and title fields when this object
@@ -22,28 +23,34 @@ public class Book
         title = bookTitle;
     }
     
-    //Added the Accessor for author
-    public String getauthor()
+    //Accessor for the author.
+    public String getAuthor()
     {
         return author;
     }
     
-    //Added the Accessor for title
-    public String gettitle()
+    //Accessor for the title.
+    public String getTitle()
     {
         return title;
     }
     
-    //This will print th author
+    //This will print the author.
     public void printAuthor()
     {
-        System.out.println (author);
+        System.out.println("Author: " + author);
     }
     
-    //This will print the title
+    //This will print the title.
     public void printTitle()
     {
-        System.out.println (title);
+        System.out.println("Title: " + title);
     }
     
+    public int getPages()
+    {
+        return pages;
+    }
+
+    // Add the methods here ...
 }
