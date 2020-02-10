@@ -43,6 +43,11 @@ public class Book
         return pages;
     }
     
+    public String getrefNumber(String ref)
+    {
+        return refNumber;
+    }
+    
     //This will print the author.
     public void printDetail()
     {
@@ -59,5 +64,11 @@ public class Book
     {
         System.out.println("Title: ," + title + "Author: ," + author + "Pages: ," + pages);
     }
+    
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
+    }
+    
     // Add the methods here ...
 }
