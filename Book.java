@@ -60,6 +60,19 @@ public class Book
         System.out.println("Title: " + title);
     }
     
+    //Forgot to add this method.
+    public void setRefNumber(String ref)
+    {
+        if(refNumber.length() >= 3)
+        {
+            refNumber = ref;
+        }
+        else
+        {
+            System.out.println("Error! Refrence number must be at least 3 characters long.");
+        }   
+    }
+    
     public void printDetails()
     {
         System.out.println("Title: ," + title + " Author: ," + author + " Pages: ," + pages);
