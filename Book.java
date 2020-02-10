@@ -23,6 +23,7 @@ public class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
     
     //Accessor for the author.
@@ -43,7 +44,7 @@ public class Book
     }
     
     //This will print the author.
-    public void printAuthor()
+    public void printDetail()
     {
         System.out.println("Author: " + author);
     }
@@ -54,10 +55,6 @@ public class Book
         System.out.println("Title: " + title);
     }
     
-    public void SetrefNumber(String ref)
-    {
-        return refNumber;
-    }
     public void printDetails()
     {
         System.out.println("Title: ," + title + "Author: ," + author + "Pages: ," + pages);
