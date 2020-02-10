@@ -62,13 +62,21 @@ public class Book
     
     public void printDetails()
     {
-        System.out.println("Title: ," + title + "Author: ," + author + "Pages: ," + pages);
+        System.out.println("Title: ," + title + " Author: ," + author + " Pages: ," + pages);
+        
+        //Exercise 2.89 (Got help for this one, don't understand this part).
+        String refNumberString;
+        if(refNumber.length() > 0)
+        {
+            refNumberString = refNumber;
+        }
+        else
+        {
+            refNumberString = "ZZZ";
+        }
+        System.out.println("Refrence number: " + refNumberString);
     }
     
-    public void setRefNumber(String ref)
-    {
-        refNumber = ref;
-    }
     
     // Add the methods here ...
 }
